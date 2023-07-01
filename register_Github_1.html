@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Github1_Styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <form>
+      <div class="form-group">
+        <lable>Name:</label><br>
+          <input class="form-group" type="text" id="name" name="name"/>
+        </div>
+      <div class="form-group">
+        <lable>Email:</label><br>
+            <input class="form-group" type="email" id="email" name="email"/>
+          </div>
+      <div class="form-group">
+          <lable>Password:</label><br>
+              <input class="form-group" type="password" id="password" name="password"/>
+          </div>
+          <div class="form-group">
+            <input class="form-group" type="button" value="Register" id="re" onclick="f1()"/>
+          </div>
+    </form>
+  </div>
+</div>
+</body>
+<script>
+  function f1()
+  {
+     let name,email,password;
+     name=document.getElementById("name").value
+     email=document.getElementById("email").value
+     password=document.getElementById("tp").value
+     localStorage.setItem("name",name);
+     localStorage.setItem("email",email);
+     localStorage.setItem("password",password);
+     console.log(localStorage.getItem("password"))
+     console.log(localStorage.getItem("name"))
+     console.log(localStorage.getItem("email"))
+
+  }
+</script>
+</html>
